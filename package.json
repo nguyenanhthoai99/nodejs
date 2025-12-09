@@ -7,7 +7,8 @@
     "beautiful": "lint-staged",
     "start": "nodemon --inspect src/index.js",
     "watch": "sass --watch src/resources/scss:src/public/css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -21,11 +22,6 @@
   "homepage": "https://github.com/nguyenanhthoai99/nodejs#readme",
   "lint-staged": {
     "src/**/*.{js,json,scss,hbs}": "prettier --single-quote --tab-width 4 --trailing-comma all --write"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "dependencies": {
     "bootstrap": "^5.3.8",
