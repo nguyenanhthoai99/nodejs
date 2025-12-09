@@ -4,10 +4,9 @@ class NewsController {
         res.render('news');
     }
 
-    show(req, res){
-        res.send('NEW LẬP TRÌNH THÌ SAO')
+    show(req, res) {
+        res.send('NEW LẬP TRÌNH THÌ SAO');
     }
 }
 
-module.exports = new NewsController;
-
+module.exports = new NewsController();
