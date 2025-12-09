@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "beautiful":"lint-staged",
+    "beautiful": "lint-staged",
     "start": "nodemon --inspect src/index.js",
     "watch": "sass --watch src/resources/scss:src/public/css",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,12 +19,12 @@
     "url": "https://github.com/nguyenanhthoai99/nodejs/issues"
   },
   "homepage": "https://github.com/nguyenanhthoai99/nodejs#readme",
-    "lint-staged": {
+  "lint-staged": {
     "src/**/*.{js,json,scss,hbs}": "prettier --single-quote --tab-width 4 --trailing-comma all --write"
   },
-  "husky":{
-    "hooks":{
-      "pre-commit": "lint-staged"
+  "husky": {
+    "hooks": {
+      "commit-msg": "lint-staged"
     }
   },
   "dependencies": {
