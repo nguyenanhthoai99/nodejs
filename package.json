@@ -22,11 +22,7 @@
   "lint-staged": {
     "src/**/*.{js,json,scss,hbs}": "prettier --single-quote --tab-width 4 --trailing-comma all --write"
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "lint-staged"
-    }
-  },
+
   "dependencies": {
     "bootstrap": "^5.3.8",
     "express": "^5.2.1",
