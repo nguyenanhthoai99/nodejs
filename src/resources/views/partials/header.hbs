@@ -16,16 +16,43 @@
             <span class='navbar-toggler-icon'></span>
         </button>
         <div class='collapse navbar-collapse' id='navbarSupportedContent'>
-            <ul class='navbar-nav me-auto mb-2 mb-lg-0'>
-                <li class='nav-item'>
+            <ul class='navbar-nav ms-auto me-5 mb-lg-0'>
+                <li class='nav-item dropdown'>
                     <a
-                        class='nav-link active'
-                        aria-current='page'
+                        class='nav-link dropdown-toggle'
                         href='#'
-                    >Home</a>
-                </li>
-                <li class='nav-item'>
-                    <a class='nav-link' href='/courses/create'>Đăng khóa học</a>
+                        role='button'
+                        data-bs-toggle='dropdown'
+                        aria-expanded='false'
+                    >
+                        <img
+                            src='https://www.gravatar.com/avatar/463e52dff1c113ddcd110339a749532765420d21c2c36c8f670362076c64f19d.jpg?s=80&d=mp&r=g'
+                            alt=''
+                            class='user-avatar'
+                        />
+                        Dropdown
+                    </a>
+                    <ul class='dropdown-menu'>
+                        <li>
+                            <a class='nav-link' href='/courses/create'>Đăng khóa
+                                học</a></li>
+                        <li>
+                            <hr class='dropdown-divider' />
+                        </li>
+                        <li>
+                            <a class='nav-link' href='/me/stored/courses'>Khóa
+                                học của tôi</a></li>
+                        <li>
+                            <hr class='dropdown-divider' />
+                        </li>
+                        <li>
+                            <a class='nav-link' href='/me/stored/new'>Bài đăng
+                                của tôi</a></li>
+                        <li>
+                            <hr class='dropdown-divider' />
+                        </li>
+                        <li><a class='dropdown-item' href='#'>Đăng xuất</a></li>
+                    </ul>
                 </li>
             </ul>
         </div>
