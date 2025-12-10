@@ -19,9 +19,12 @@
     "url": "https://github.com/nguyenanhthoai99/nodejs/issues"
   },
   "homepage": "https://github.com/nguyenanhthoai99/nodejs#readme",
-  "lint-staged": {
-    "src/**/*.{js,json,scss,hbs}": "prettier --single-quote --tab-width 4 --trailing-comma all --write"
-  },
+ "lint-staged": {
+  "src/**/*.{js,json,scss,hbs}": [
+    "prettier --write"
+  ]
+}
+,
   "dependencies": {
     "bootstrap": "^5.3.8",
     "express": "^5.2.1",
