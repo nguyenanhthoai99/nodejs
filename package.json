@@ -19,17 +19,13 @@
     "url": "https://github.com/nguyenanhthoai99/nodejs/issues"
   },
   "homepage": "https://github.com/nguyenanhthoai99/nodejs#readme",
- "lint-staged": {
-  "src/**/*.{js,json,scss,hbs}": [
-    "prettier --write"
-  ]
-}
-,
+  "lint-staged": {
+    "src/**/*.{js,json,scss,hbs}": "prettier --single-quote --tab-width 4 --trailing-comma all --write"
+  },
   "dependencies": {
     "bootstrap": "^5.3.8",
     "express": "^5.2.1",
     "express-handlebars": "^5.1.0",
-    "method-override": "^3.0.0",
     "mongoose": "^6.13.8",
     "mongoose-slug-generator": "^1.0.4"
   },
