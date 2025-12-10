@@ -24,7 +24,15 @@ class CourseController {
     }
 
     edit(req, res, next) {
-        res.render('courses/edit');
+        Course.findById(req.params.id).lean()
+            .then(course => res.render('courses/edit', { course }))
+            .catch(next)
+    }
+
+    update(req, res, next) {
+        Course.updateOne({_id: req.params.id}, req.body)
+            .then(()=> res.redirect('/me/stored/courses'))
+            .catch(next)
     }
 }
 
