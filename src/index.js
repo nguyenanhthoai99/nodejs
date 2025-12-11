@@ -22,8 +22,8 @@ app.use(
         extended: true,
     }),
 );
-app.use(express.json());
-app.use(methodOverride('_method'))
+                app.use(express.json());
+                app.use(methodOverride('_method'))
 
 //HTTP LOGER
 app.use(morgan('combined'));
