@@ -23,12 +23,16 @@
         <th scope='col'></th>
         <th scope='col'>STT</th>
         <th scope='col'>Tên khóa học
-          <a href="?_sort&column=name&type=desc">
-            <i class="fa-solid fa-arrow-down-up-across-line"></i>
-          </a>
+          {{{ sorttable 'name' _sort}}}
         </th>
-        <th scope='col'>Trình độ</th>
-        <th scope='col' colspan='2'>Thời gian tạo</th>
+        <th scope='col'>
+          Trình độ
+          {{{ sorttable 'level' _sort}}}
+        </th>
+        <th scope='col' colspan='2'>
+          Thời gian tạo
+          {{{ sorttable 'createdAt' _sort}}}
+          </th>
       </tr>
     </thead>
     <tbody>
